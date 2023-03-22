@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  /* background-image: url(''); */
+  background-image: url('https://res.cloudinary.com/dovuffpii/image/upload/v1679449173/mdays-great-race/Monrovia-Days-Carnival_fgp1px.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -19,9 +19,8 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 140px;
-  padding-top: 30px;
-  padding-left: 20px;
+  width: 200px;
+  padding-top: 20px;
   margin: auto;
 }
 
@@ -30,29 +29,30 @@ body {
   justify-content: center;
   margin: auto;
   margin-bottom: 130px;
-  padding-top: 50px;
+  padding-top: 120px;
 }
 
 .login-card {
   color: #013A5C;
-  background-color: #f3f3f3;
+  background-color: #fff;
   align-content: center;
   justify-content: center;
   width: 320px;
-  margin-top: 80px;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
   margin: auto;
   border: none;
   border-radius: 4px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .login-greeting {
   padding-top: 10px;
   text-align: center;
   text-transform: uppercase;
+  font-size: 1.75em;
+  line-height: 1;
 }
 
 .back-link {
@@ -63,7 +63,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -90,47 +89,54 @@ body {
 .login-button {
   color: white;
   background-color: #D91F26;
-  width: 98%;
-  margin-top: 30px;
+  width: 100%;
+  margin-top: 5px;
   padding-top: 16px;
   padding-bottom: 16px;
   border: none;
   border-radius: 4px;
   font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .login-button:hover {
-  background-color: #fff;
-  border: 1px solid;
-  border-color: #D91F26;
-  color: #D91F26;
+  background-color: #013A5C;
+  color: #fff;
   cursor: pointer;
   font-weight: 700;
-}
-
-.errors {
-  text-align: center;
-  font-size: 15px;
-  color: D91F26;
-  margin: 0;
+  letter-spacing: 1px;
 }
 
 .sign-up-link {
   font-size: 13px;
-  line-height: ;
+  line-height: 1;
+  margin-bottom: 0;
   font-weight: 300;
   text-align: center;
 }
 
 .sign-up-form-link {
   font-size: 13px;
-  line-height: 14px;
+  line-height: 1;
   font-weight: 600;
   letter-spacing: 0.5px;
   text-align: center;
+  margin-left: 22%;
 }
 
 .sign-up-form-link:hover {
   color: #D91F26;
   cursor: pointer;
+}
+
+.space {
+  padding-bottom: 14px;
+}
+
+.errors {
+  text-align: center;
+  font-size: 15px;
+  color: #D91F26;
+  margin: 0;
 }
