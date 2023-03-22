@@ -38,10 +38,10 @@ function Login() {
   return (
     <div className='login-page'>
     <div>
-      <img className='login-logo' src='' alt='MONROVIA-DAYS-GREAT-RACE-LOGO' />
     </div>
     <div className='login-body'>
       <div className="login-card">
+      <img className='login-logo' src='https://res.cloudinary.com/dovuffpii/image/upload/v1679449812/mdays-great-race/monrovia-days-great-race-logo_yegeua.png' alt='MONROVIA-DAYS-GREAT-RACE-LOGO' />
         <h1 className='login-greeting'>Sign In</h1>
         <div className="login-form">
           <form onSubmit={handleSubmit}>
@@ -71,7 +71,8 @@ function Login() {
         </div>
         {errors ? <div className="errors">{errors}</div> : null}
         <p className="sign-up-link" onClick={handleSignUp}> New to the Great Race?</p>
-        <p className="sign-up-form-link">Click here to sign up now.</p>
+        <span className="sign-up-form-link">Click here to sign up now.</span>
+        <div className="space"></div>
       </div>
     </div>
   </div>
