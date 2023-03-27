@@ -1,15 +1,3 @@
-body {
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  background-image: url('https://res.cloudinary.com/dovuffpii/image/upload/v1679449173/mdays-great-race/Monrovia-Days-Carnival_fgp1px.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100vh;
-  width: 100vw;
-}
-
 .site-footer {
   display: none;
 }
@@ -19,17 +7,24 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 200px;
+  width: 180px;
   padding-top: 20px;
   margin: auto;
 }
 
 .login-body{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
   margin: auto;
-  margin-bottom: 130px;
-  padding-top: 120px;
+  margin-top: 10px;
+  z-index: 9999;
+  border-radius: 5px;
 }
 
 .login-card {
@@ -38,6 +33,8 @@ body {
   align-content: center;
   justify-content: center;
   width: 320px;
+  max-width: 95vw;
+  max-height: 85vh;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
@@ -45,6 +42,7 @@ body {
   border: none;
   border-radius: 4px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  align-content: center;
 }
 
 .login-greeting {
@@ -52,26 +50,34 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-size: 1.75em;
-  line-height: 1;
 }
 
-.back-link {
-  font-size: 8px;
+.login-subgreeting {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  font-weight: 700;
+  margin-left: 29%;
+}
+
+.description {
+  text-align: center;
 }
 
 .login-form {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 18px;
 }
 
 .input-field {
   width: 240px;
   margin-top: 5px;
   margin-bottom: 5px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   padding-left: 6px;
   border: 1px solid;
   border-radius: 4px;
@@ -84,6 +90,7 @@ body {
 .input-field:focus-visible,
 .input-field:focus-within {
   border-color: #D91F26;
+  cursor: pointer;
 }
 
 .login-button {
@@ -91,8 +98,8 @@ body {
   background-color: #D91F26;
   width: 100%;
   margin-top: 5px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   border: none;
   border-radius: 4px;
   font-size: 12px;
@@ -122,10 +129,24 @@ body {
   font-weight: 600;
   letter-spacing: 0.5px;
   text-align: center;
-  margin-left: 22%;
+  margin-left: 23%;
 }
 
 .sign-up-form-link:hover {
+  color: #D91F26;
+  cursor: pointer;
+}
+
+.login-form-link {
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-left: 25%;
+}
+
+.login-form-link:hover {
   color: #D91F26;
   cursor: pointer;
 }
