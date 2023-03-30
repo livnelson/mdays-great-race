@@ -2,7 +2,7 @@
 Rails.application.routes.draw do
   resources :join_uhs, only: [:create, :destroy]
   resources :hunts, only: [:create, :destroy, :index]
-  resources :users, only: [:create, :destroy, :show, :update]
+  resources :users, only: [:index, :create, :destroy, :show, :update]
   # route to test your configuration
   get '*path',
       to: 'fallback#index',
