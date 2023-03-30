@@ -50,7 +50,7 @@ function Home() {
     <div className='home-page'>
       <div className='home-body'>
         <div className='home-card'>
-          <h1>Hello</h1>
+          <h2 className='greeting'>Welcome username!</h2>
           {viewStats ? <Stats /> : null}
           {viewRules ? <Rules /> : null}
           {viewLogout ? <Logout /> : null}
