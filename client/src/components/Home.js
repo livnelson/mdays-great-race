@@ -16,11 +16,13 @@ function Home() {
   const rules = <FontAwesomeIcon icon={faScaleBalanced} />
 
   function handleRules() {
+    if(viewStats === true) setViewStats(!viewStats)
     setViewRules(!viewRules)
     console.log('rules clicked')
   }
 
   function handleStats() {
+    if(viewRules === true) setViewRules(!viewRules)
     setViewStats(!viewStats)
     console.log('stats clicked')
   }
