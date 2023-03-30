@@ -32,7 +32,7 @@ function Login() {
   }
 
   function handleSignUp() {
-    navigate('/SignUp')
+    navigate('/')
   }
 
   return (
@@ -42,7 +42,8 @@ function Login() {
     <div className='login-body'>
       <div className="login-card">
       <img className='login-logo' src='https://res.cloudinary.com/dovuffpii/image/upload/v1679449812/mdays-great-race/monrovia-days-great-race-logo_yegeua.png' alt='MONROVIA-DAYS-GREAT-RACE-LOGO' />
-        <h1 className='login-greeting'>Sign In</h1>
+        <h1 className='login-greeting'>Welcome Back!</h1>
+        <span className='login-subgreeting'>Sign In Here</span>
         <div className="login-form">
           <form onSubmit={handleSubmit}>
             <input
@@ -70,8 +71,10 @@ function Login() {
           </form>
         </div>
         {errors ? <div className="errors">{errors}</div> : null}
-        <p className="sign-up-link" onClick={handleSignUp}> New to the Great Race?</p>
+        <div onClick={handleSignUp}>
+        <p className="sign-up-link"> New to the Great Race?</p>
         <span className="sign-up-form-link">Click here to sign up now.</span>
+        </div>
         <div className="space"></div>
       </div>
     </div>
