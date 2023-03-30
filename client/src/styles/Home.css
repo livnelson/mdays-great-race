@@ -25,6 +25,10 @@
   align-content: center;
 }
 
+.greeting {
+  text-align: center;
+}
+
 .footer {
   position: relative;
   height: 80px;
