@@ -39,6 +39,15 @@ module MdaysGreatRace
     # Adding back cookies and session middleware
     config.middleware.use ActionDispatch::Cookies
     config.middleware.use ActionDispatch::Session::CookieStore
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins 'https://monroviadaysgreatrace.netlify.app' # Replace with your Netlify app URL
+        resource '*',
+          headers: :any,
+          methods: [:get, :post, :put, :patch, :delete, :options, :head],
+          credentials: true
+      end
+    end
 
     # Use SameSite=Strict for all cookies to help protect against CSRF
     config.action_dispatch.cookies_same_site_protection = :strict
